@@ -17,7 +17,7 @@ public:
     Child() { cout << "Construct Child object\n"; }
     ~Child() { cout << "Destruct Child object\n"; }
 
-    void func() const { cout << "Function func() of class Child\n"; }
+    virtual void func() const { cout << "Function func() Now call in Child class\n"; }
 };
 
 void Function(const Base &obj)
